@@ -53,11 +53,18 @@
     <!-- <script src="app/index.js"></script> -->
 	<script src="app/domain/negociacao/Negociacao.js"></script>
 	<script>
-		var n1 = new Negociacao(new Date(), 5, 700);
-		//n1.data = new Date();
-		//n1.quantidade = 10;
-		//n1.valor = 200.50;
-		console.log(n1);
+		
+		let hoje = new Date();
+		
+		let n1 = new Negociacao(hoje, 5, 700);
+		
+		console.log(n1.data);		
+
+		hoje.setDate(11);
+
+		console.log(n1.data);
+		console.log(n1.valor);
+		console.log(n1.volume);
 		
 	</script>
 </body>
