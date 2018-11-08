@@ -7,7 +7,7 @@ var campos = [
 ];
 
 // precisamos de tbody, pois ele receberá a tr que vamos contruir
-console.log(campos);
+
 
 var tbody = document.querySelector('table tbody');
 
@@ -46,9 +46,9 @@ document.querySelector('.form').addEventListener('submit', function(event){
 	 // limpa o campo da data
 	 campos[0].value = '';
 	 // limpa o campo da quantidade
-	 campos[1].value = 1;	 
+	 campos[1].value = 0;	 
 	 // limpa o campo do valor
-	 campos[2].value = 0;	 
+	 campos[2].value = 1;	 
 	 // foca no campo da data
 	 campos[0].focus();
 });
