@@ -52,20 +52,9 @@
 
     <!-- <script src="app/index.js"></script> -->
 	<script src="app/domain/negociacao/Negociacao.js"></script>
-	<script>
-		
-		let hoje = new Date();
-		
-		let n1 = new Negociacao(hoje, 5, 700);
-		
-		console.log(n1.data);		
+	<script src="app/controllers/NegociacaoController.js"></script>	
+	<script src="app/app.js"></script>
+	<script src="app/ui/converters/DateConverter.js"></script>	
 
-		hoje.setDate(11);
-
-		console.log(n1.data);
-		console.log(n1.valor);
-		console.log(n1.volume);
-		
-	</script>
 </body>
 </html>
